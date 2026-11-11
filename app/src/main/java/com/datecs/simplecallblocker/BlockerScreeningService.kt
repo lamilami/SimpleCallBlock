@@ -1,4 +1,4 @@
-package com.datec.simplecallblocker
+package com.datecs.simplecallblocker
 
 import android.telecom.Call
 import android.telecom.CallScreeningService

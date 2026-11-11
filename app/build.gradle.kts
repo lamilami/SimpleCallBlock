@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.datec.simplecallblocker"
+    namespace = "com.datecs.simplecallblocker"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.datec.simplecallblocker"
+        applicationId = "com.datecs.simplecallblocker"
         minSdk = 29
         targetSdk = 36
         versionCode = 1

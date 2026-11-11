@@ -3,7 +3,7 @@
 Малко Android приложение (Kotlin, Jetpack Compose, Material 3), което блокира нежелани входящи повиквания чрез официалния `CallScreeningService` + `RoleManager`. Без ROOT, без интернет, без foreground service.
 
 - minSdk 29 (Android 10), targetSdk 36
-- Пакет: `com.datec.simplecallblocker`
+- Пакет: `com.datecs.simplecallblocker`
 
 ## Структура
 
@@ -58,7 +58,7 @@ adb install -r app/build/outputs/apk/release/app-release.apk
 
 **През ADB** (за тестови/служебни устройства):
 ```
-adb shell cmd role add-role-holder android.app.role.CALL_SCREENING com.datec.simplecallblocker
+adb shell cmd role add-role-holder android.app.role.CALL_SCREENING com.datecs.simplecallblocker
 adb shell dumpsys role | grep -A2 CALL_SCREENING      # проверка
 ```
 
@@ -73,7 +73,7 @@ adb shell dumpsys role | grep -A2 CALL_SCREENING      # проверка
 
 ```
 adb install -r app-release.apk
-adb shell cmd role add-role-holder android.app.role.CALL_SCREENING com.datec.simplecallblocker
+adb shell cmd role add-role-holder android.app.role.CALL_SCREENING com.datecs.simplecallblocker
 ```
 В приложението въведете: черен списък `001-650-555-1234`; префикс `650777`; префикс `+44`.
 
@@ -129,7 +129,7 @@ adb shell cmd role add-role-holder android.app.role.CALL_SCREENING com.datec.sim
 **ADB инструкция** – само на подготвено устройство **без нито един акаунт** (обикновено веднага след factory reset, преди добавяне на Google акаунт):
 ```
 adb install -r app-release.apk
-adb shell dpm set-device-owner com.datec.simplecallblocker/.AdminReceiver
-adb shell cmd role add-role-holder android.app.role.CALL_SCREENING com.datec.simplecallblocker
+adb shell dpm set-device-owner com.datecs.simplecallblocker/.AdminReceiver
+adb shell cmd role add-role-holder android.app.role.CALL_SCREENING com.datecs.simplecallblocker
 ```
 Премахване: бутон *Remove Device Owner* в приложението (или factory reset).

@@ -1,4 +1,4 @@
-package com.datec.simplecallblocker
+package com.datecs.simplecallblocker
 
 import android.content.Context
 import java.io.File
