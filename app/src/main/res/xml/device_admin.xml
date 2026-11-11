@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- No admin policies are needed; Device Owner APIs used (uninstall block, permission grant) do not require <uses-policies>. -->
+<device-admin>
+    <uses-policies />
+</device-admin>
